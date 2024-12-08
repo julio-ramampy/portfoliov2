@@ -5,10 +5,10 @@
   "type": "module",
   "homepage": "http://julio-ramampy.github.io/portfoliov2",
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
